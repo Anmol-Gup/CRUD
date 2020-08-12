@@ -1,0 +1,40 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Home
+    style.
+      *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      }
+      div {
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      }
+      a{
+      font-size: 2rem;
+      box-sizing: border-box;
+      border: 3px solid blue;
+      color: blue;
+      padding: 1rem 1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      }
+      a:hover{
+      color: white;
+      background-color: blue;
+      }
+  body
+    div
+      a(href="/register" target="_blank") SignUp
+      a(href="/show" target="_blank") Signin
+      a(href="/up" target="_blank") Update
+      a(href="/del" target="_blank") Delete
